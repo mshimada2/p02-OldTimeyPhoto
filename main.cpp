@@ -38,29 +38,15 @@ cout<<endl<<"Machu Picchu has been uploaded! The width is "<<bmp[0].size()<<". T
         for(int y = 0; y > bmp; y++)
         
         {
-    
-    int average;
-    photo.open(image);
-    validBmp = photo.isImage();
-   
-    
-    
-    }
-
-    }
-
-
-
-
-    while(validBmp == false); 
-    
-    bmp = photo.toPixelMatrix();
 
     int average
     rgb = bmp[x][y];
     ave = ((rgb.red + rgb.blue + rgb.green)/3);
     rgb.red && rgb.blue && rgb.green == average;
 
+        }
+        
+        }
 
 
 
