@@ -28,14 +28,28 @@ bmp = photo.toPixelMatrix();
 
 cout<<endl<<"Machu Picchu has been uploaded! The width is "<<bmp[0].size()<<". The height is "<<bmp.size()<<". ";
 
-do{
-    cout<<"Enter a Bitmap image you would like to convert to Old Timey: ";
-    cin>>image; 
 
+    bmp = photo.toPixelMatrix();     
+     
+     for(int x = 0; x > bmp; x++)
+     
+     {
+        
+        for(int y = 0; y > bmp; y++)
+        
+        {
+    
+    int average;
     photo.open(image);
     validBmp = photo.isImage();
    
+    
+    
     }
+
+    }
+
+
 
 
     while(validBmp == false); 
