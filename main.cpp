@@ -34,13 +34,13 @@ do{
 
     photo.open(image);
     validBmp = photo.isImage();
-
+   
     }
 
 
     while(validBmp == false); 
     
-    bitmap = picture.toPixelMatrix();
+    bmp = photo.toPixelMatrix();
 
     int average
     rgb = bmp[x][y];
