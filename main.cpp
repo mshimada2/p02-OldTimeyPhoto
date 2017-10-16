@@ -1,27 +1,31 @@
 #include<iostream>
 #include<string> 
 #include"bitmap.h"
+#include<vector>
+
 
 using namespace std;
 
 
 int main(){
 
-//ask user for bitmap file
-//use cout and cin for user input
 
+//estabish values and tools needed to run the program
 
+Bitmap photo;
 
-Bitmap img;
 vector <vector <Pixel> > bmp; 
-Pixel rgb;  
+
+Pixel rainbow;  
  
+string image;
 
-//convert image to greyscale to look old timey 
-img.open("machupicchu.bmp");
-bmp = img.toPixelMatrix();
+//ask user for input image file
 
-bool validBmp = img.isImage();
+photo.open("machupicchu.bmp");
+bmp = photo.toPixelMatrix();
+
+bool validBmp = photo.isImage();
 
 if(validBmp == true ){
 
