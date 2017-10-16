@@ -20,36 +20,32 @@ Pixel rainbow;
  
 string image;
 
+bool validBmp = false;
 //ask user for input image file
 
 photo.open("machupicchu.bmp");
 bmp = photo.toPixelMatrix();
 
-bool validBmp = photo.isImage();
+cout<<endl<<"Machu Picchu has been uploaded! The width is "<<bmp[0].size()<<". The height is "<<bmp.size()<<". ";
 
-if(validBmp == true ){
+do{
+    cout<<"Enter a Bitmap image you would like to convert to Old Timey: ";
+    cin>>image; 
 
-    bmp = img.toPixelMatrix();
-
-
-
-
-    rgb = bmp[0][0];
-    rgb.red = 230; 
-    rgb.green = 230;
-    rgb.blue = 230;
-
-
-
-    bmp[0][0] = rgb;
-    img.fromPixelMatrix(bmp);
-    img.save("machupicchu.bmp");
+    photo.open(image);
+    validBmp = photo.isImage();
 
     }
 
 
+    while(validBmp == false); 
+    
+    bitmap = picture.toPixelMatrix();
 
-cout<<endl<<"Machu Picchu has been uploaded! The width is "<<bmp[0].size()<<". The height is "<<bmp.size()<<". ";
+    int average
+    rgb = bmp[x][y];
+    ave = ((rgb.red + rgb.blue + rgb.green)/3);
+    rgb.red && rgb.blue && rgb.green == average;
 
 
 
