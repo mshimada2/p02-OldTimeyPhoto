@@ -59,7 +59,9 @@ for(int x = 0; x < bmp; x++)
     }
     
     
-
+bmp[x][y] = rainbow;
+photo.fromPixelMatrix(bmp);
+photo.save("oldtimey.bmp");
 
 
 return 0;
