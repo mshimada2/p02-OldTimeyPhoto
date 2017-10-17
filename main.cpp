@@ -37,7 +37,23 @@ bmp = photo.toPixelMatrix();
 
 cout<<endl<<image<<" has been uploaded. Its width is"<<bmp[0].size()<<" Its height is "<<bmp.size()<<" ."; 
 
+for(int x = 0; x < bmp; x++)
+{
 
+    for(int y = 0; y < bmp; y++)
+    {
+
+    int grey;
+    rainbow.red
+    rainbow.blue
+    rainbow.green
+
+
+
+    }
+
+
+    }
 
 
 
