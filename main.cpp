@@ -44,9 +44,10 @@ for(int x = 0; x < bmp; x++)
     {
 
     int grey;
-    rainbow.red
-    rainbow.blue
-    rainbow.green
+    rainbow = bmp[0][0];
+    rainbow.red = 0;
+    rainbow.blue = 0;
+    rainbow.green = 0;
 
 
 
